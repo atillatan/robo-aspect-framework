@@ -1,0 +1,36 @@
+--temp-output:C:\Users\Atilla\WS\robo-middleware-framework\src\obj\Debug\net451\
+--out:C:\Users\Atilla\WS\robo-middleware-framework\src\bin\Debug\net451\src.exe
+--define:DEBUG
+--define:TRACE
+--define:NET451
+--suppress-warning:CS1701
+--suppress-warning:CS1702
+--suppress-warning:CS1705
+--platform:x64
+--optimize:False
+--emit-entry-point:True
+--output-name:src
+--file-version:1.0.0.0
+--version:1.0.0.0
+--informational-version:1.0.0
+--target-framework:.NETFramework,Version=v4.5.1
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Facades\System.Runtime.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\mscorlib.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\System.Core.dll
+--reference:C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.1\Microsoft.CSharp.dll
+C:\Users\Atilla\WS\robo-middleware-framework\src\Application.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Program.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\ApplicationBuilder.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\IApplicationBuilder.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\InvokeContext.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\InvokeDelegate.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\InvokeRequest.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\InvokeResult.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\ApplicationBuilder\UseMiddlewareExtensions.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Middlewares\CacheManager.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Middlewares\LoggerManager.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Middlewares\TargetInvoker.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Properties\AssemblyInfo.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Services\IPersonService.cs
+C:\Users\Atilla\WS\robo-middleware-framework\src\Services\PersonService.cs
