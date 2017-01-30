@@ -1,0 +1,12 @@
+
+*.dll
+
+src/bin/Debug/netcoreapp1.0/src.dll
+
+src/bin/Debug/netcoreapp1.0/src.pdb
+
+*.pdb
+
+src/project.lock.json
+
+src/project.lock.json
