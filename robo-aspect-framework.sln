@@ -1,16 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{EF7902C7-1FDD-4041-BC8E-B72071D0AAAF}"
-EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "robo-aspect-framework", "src\robo-aspect-framework.xproj", "{AC16C9D3-7A74-4C8A-997A-38BCA75EAFE4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "doc", "doc", "{BE612300-8A17-4FD0-A26B-F9D499BAC51E}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "src", "src\src.csproj", "{AC16C9D3-7A74-4C8A-997A-38BCA75EAFE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC16C9D3-7A74-4C8A-997A-38BCA75EAFE4} = {EF7902C7-1FDD-4041-BC8E-B72071D0AAAF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FDC41527-5B0E-45AD-9B90-8337CFA55976}
 	EndGlobalSection
 EndGlobal

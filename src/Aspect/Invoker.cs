@@ -41,8 +41,8 @@ namespace AspectExample.Aspect
                 }
             }
 
-            IEnumerable<Attribute> aspects = _instance.GetType().GetMethod(methodName).GetCustomAttributes(true);
-
+            object[] aspects = _instance.GetType().GetMethod(methodName).GetCustomAttributes(true);
+        
             RunBeforeAspects(context, aspects);
 
             //if cache aspect or other aspects, returns response.
@@ -72,7 +72,7 @@ namespace AspectExample.Aspect
             return result;
         }
 
-        private static void RunBeforeAspects(InvokeContext context, IEnumerable<Attribute> aspects)
+        private static void RunBeforeAspects(InvokeContext context, object[] aspects)
         {
             foreach (var aspect in aspects)
             {
@@ -83,7 +83,7 @@ namespace AspectExample.Aspect
             }
         }
 
-        private static void RunAfterAspects(InvokeContext context, IEnumerable<Attribute> aspects)
+        private static void RunAfterAspects(InvokeContext context, object[] aspects)
         {
             foreach (var aspect in aspects)
             {
