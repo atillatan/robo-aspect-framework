@@ -1,8 +1,10 @@
 # robo-aspect-framework
 
-Attributes for AOP
+This project demonstrates when we invoking some method we can pass the method as a parameter to another method.
+If we design the second method for separating of concerns (SoC), we can use Aspect Oriented Programing (AOP).
+we can catch method attributes, and we can call BeforeAspects() and AfterAspects().
 
-Service Example
+## Service Example
 
 ```csharp
 public class PersonService : BaseService, IPersonService
@@ -16,7 +18,7 @@ public class PersonService : BaseService, IPersonService
 }
 ```
 
-Invoking Methods:
+## Invoking Methods
 
 ```csharp
 
@@ -26,7 +28,33 @@ var result = personService.Invoke<string>(() => personService.Method1(3));
 
 ```
 
-Invoker:
+## ServiceExtension
+
+```csharp
+namespace AspectExample.Services
+{
+    public static class ServiceExtension
+    {
+        public static Task<TResult> InvokeAsync<TResult>(this BaseService instance, Expression<Func<object>> function) where TResult : class
+        {
+            return Task.Run(() => Application.Invoke<TResult>(function, instance));
+        }
+
+        public static TResult Invoke<TResult>(this BaseService instance, Expression<Func<object>> function) where TResult : class
+        {
+            return Application.Invoke<TResult>(function, instance);
+        }
+
+        public static object Invoke(this BaseService instance, Expression<Func<object>> function)
+        {
+            return Application.Invoke<object>(function, instance);
+        }
+    }
+}
+```
+
+
+## Invoker
 
 ```csharp
 
